@@ -1034,7 +1034,7 @@ function DevilDetail() {
 
 function TowerDetail() {
   return (
-    <article className="print-card overflow-hidden rounded-[4px] border border-[var(--line)] bg-[var(--paper-2)] shadow-[0_24px_70px_rgba(74,56,18,0.18)]">
+    <article data-card-detail="tower" className="print-card overflow-hidden rounded-[4px] border border-[var(--line)] bg-[var(--paper-2)] shadow-[0_24px_70px_rgba(74,56,18,0.18)]">
       <DetailRow image={towerImage} alt="La Torre · Rider-Waite original, al derecho" caption="AL DERECHO" heading="Al derecho" badge="Al derecho" general={towerUprightGeneral} realms={towerUprightRealms} />
       <DetailRow image={towerImage} alt="La Torre · Rider-Waite original, invertida" caption="INVERTIDO" heading="Invertido" badge="Invertido" general={towerReversedGeneral} realms={towerReversedRealms} inverted />
     </article>
