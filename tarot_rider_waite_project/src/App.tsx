@@ -12,8 +12,8 @@ import wheelImage from "./assets/6d45fcaca5ddff7d-image_search_0_rws_tarot_10_wh
 import justiceImage from "./assets/f5379dbda203cb56-carta_11_justicia.png";
 import deathImage from "./assets/5abe30ee5edefcd8-image_search_1_rws_tarot_13_death_wikimedia.png";
 
-import temperanceRWImage from "./assets/99088e77b1ee3a07-FIX_14_TEMPLANZA_RW.png";
-import hangedFixedImage from "./assets/94e5e87abac617af-FIX_12_COLGADO.png";
+import temperanceRWImage from "./assets/15d5939e3bf8cfaa-image_search_0_rws_tarot_14_temperance_wikimedia.png";
+import hangedFixedImage from "./assets/4e34f4e95b177e93-image_search_0_tarotaccessories_hanged_man_tarot_card.png";
 import moonImage from "./assets/fba68c1600e80a31-FIX_18_LUNA.png";
 import sunImage from "./assets/8714c9e459252f17-FIX_19_SOL.png";
 import judgementImage from "./assets/f5ca2891bd411aee-FIX_20_JUICIO.png";
