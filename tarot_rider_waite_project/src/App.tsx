@@ -1035,11 +1035,8 @@ function DevilDetail() {
 function TowerDetail() {
   return (
     <article className="print-card overflow-hidden rounded-[4px] border border-[var(--line)] bg-[var(--paper-2)] shadow-[0_24px_70px_rgba(74,56,18,0.18)]">
-      <div className="flex justify-center border-b border-[var(--line-soft)] bg-[var(--paper)] p-5">
-        <img src={towerImage} alt="La Torre · Rider-Waite-Smith original" className="max-h-[440px] w-auto rounded-[3px] border border-[var(--line)] shadow-lg" />
-      </div>
-      <TypographicDetailRow figure={<TypographicFigure caption="AL DERECHO" numeral="XVI" name="LA TORRE" />} heading="Al derecho" badge="Al derecho" general={towerUprightGeneral} realms={towerUprightRealms} />
-      <TypographicDetailRow figure={<TypographicFigure caption="INVERTIDO" numeral="XVI" name="LA TORRE" rotated />} heading="Invertido" badge="Invertido" general={towerReversedGeneral} realms={towerReversedRealms} inverted />
+      <DetailRow image={towerImage} alt="La Torre · Rider-Waite original, al derecho" caption="AL DERECHO" heading="Al derecho" badge="Al derecho" general={towerUprightGeneral} realms={towerUprightRealms} />
+      <DetailRow image={towerImage} alt="La Torre · Rider-Waite original, invertida" caption="INVERTIDO" heading="Invertido" badge="Invertido" general={towerReversedGeneral} realms={towerReversedRealms} inverted />
     </article>
   );
 }
@@ -1319,15 +1316,7 @@ export default function App() {
                         <span className="relative block overflow-hidden">
                           <span className="absolute left-3 top-3 z-10 rounded-full bg-[var(--gold-deep)] px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.16em] text-white">Completo</span>
 
-                          {index === 16 ? (
-                            <span className="flex aspect-[2/3.5] w-full flex-col items-center justify-center bg-[#fffaf0] px-4 py-6 text-center">
-                              <span className="font-display text-4xl font-semibold text-[var(--gold-deep)]">{arcano.number}</span>
-                              <span className="font-display mt-3 text-lg font-bold leading-6 text-[var(--ink)]">{arcano.name}</span>
-                              <span className="mt-3 text-[13px] italic leading-5 text-[var(--muted)]">Arcano Mayor · Rider-Waite-Smith</span>
-                            </span>
-                          ) : (
-                            <TarotImage src={cardImage(index)} alt={cardAlt(index)} className="block aspect-[2/3.5] w-full bg-[#bfa14f] object-contain transition-transform duration-300 group-hover:scale-[1.02]" />
-                          )}
+                          <TarotImage src={cardImage(index)} alt={cardAlt(index)} className="block aspect-[2/3.5] w-full bg-[#bfa14f] object-contain transition-transform duration-300 group-hover:scale-[1.02]" />
                         </span>
                         <span className="block px-3 py-3.5 text-center sm:px-4 sm:py-4">
                           {index === 5 ? (
